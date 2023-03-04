@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href=style.css>
+<title>Dispatch Forums</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.page_link {
+    border:3px outset red;
+    background-color:rgb(255, 127, 127);
+    text-align:center;
+    color:black !important;
+    width:100% !important;
+}
+a {
+    color:black;
+}
+
+}
+</style>
+<style>
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #444 !important;
+            color: white !important;
+        }
+
+        .bg-light {
+            background: #333 !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+        #auth {
+            display: none;
+        }
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+<!-- CSS only -->
+<link rel="canonical" href="https://dispatch.ml/forum/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .topnav {
+        position: sticky;
+    }
+
+    @media only screen and (max-width: 767px) {
+        #navbar {
+            display: none;
+        }
+
+        #col1 {
+            display: none;
+        }
+
+        #icol {
+            display: none;
+        }
+
+        .col-9 {
+            width: 100% !important;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .topnav {
+            display: none;
+        }
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: lightgray;
+        position: relative;
+    }
+
+    #btn1 {
+        width: 80%;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #444 !important;
+            color: white !important;
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #444 !important;
+            color: white !important;
+        }
+
+        .bg-light {
+            background: #333 !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+        #auth {
+            display: none;
+        }
+    }
+</style>
+<style>
+    .topnav {
+        position: sticky;
+    }
+
+    @media only screen and (max-width: 767px) {
+        #navbar {
+            display: none;
+        }
+
+        #col1 {
+            display: none;
+        }
+
+        #icol {
+            display: none;
+        }
+
+        .col-9 {
+            width: 100% !important;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .topnav {
+            display: none;
+        }
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: lightgray;
+        position: relative;
+    }
+
+    #btn1 {
+        width: 80%;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #444 !important;
+            color: white !important;
+        }
+    }
+</style>
+<div class="topnav">
+    <a href="/index.php">Dispatch Forums</a>
+    <div id="myLinks">
+        <a href="/index.php">Dispatch Home</a>
+        <a href="/forum/main.php">Make a Post</a>
+        <a href="/forum/links.html">Browse through posts</a>
+        <a href="https://gonerogue.ml/register.php?s=phpchat">Register</a>
+        <a href="/login.php">Login</a>
+        <!-- <a href="https://gonerogue-unblocker.herokuapp.com/">Unblockеr</a> -->
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <script>
+        function hamburger() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</div>
+<style>
+body {
+    background:black !important;
+}
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #444 !important;
+            color: white !important;
+        }
+
+        .bg-light {
+            background: #333 !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+        #auth {
+            display: none;
+        }
+    }
+
+    #navbar a {
+        margin-right: 25px;
+        color: lightgrey;
+    }
+    #navbar a:hover {
+        color: white;
+    }
+    div a img {
+        display: none;
+    }
+</style>
+<nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark" style="position: sticky;">
+    <a class="navbar-brand" href="#">
+        <img src="/logo.png" height="30" style="margin-left: 10px;" alt="Dispatch Logo">
+    </a>
+    <style>
+        @font-face {
+            font-family: "Fester1";
+            src: url("/fester.woff");
+        }
+    </style>
+    <a href="/forum" style="margin-right: 25px; font-family: 'Fester1'; font-size: 35px;">Forums</a>
+
+
+    <a class="nav-link" href="/" style="margin-right: 25px;">Home</a>
+
+    <a class="nav-link" href="/forum/main.php" style="margin-right: 25px;">Make a post</a>
+
+
+    <a class="nav-link" href="/forum/links.html" style="margin-right: 25px;">View posts</a>
+
+    <a class="nav-link"  href="/newinterface.php" style="margin-right: 25px;">Main Chatroom</a>
+
+    <a class="nav-link" href="/login.php" style="margin-right: 25px;">Login/Register</a>
+    <a class="nav-link" href="/policy.html" style="margin-right: 25px;">Policies</a>
+</nav>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        </div>
+        <style>
+            .page_link a {
+                color: white!important;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .page_link {
+                padding: 10px;
+                background: black;
+                border-radius: 7px;
+                border: 2px solid #222!important;
+                transition: 0.5s;
+            }
+            .page_link:hover {
+                background: #222;
+            }
+            .container {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: auto auto auto;
+            }
+            .text-center {
+                text-align: left;
+                width: 100%;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white!important;
+            }
+        </style>
+<script src="main.js" type="text/javascript"></script><div class="container text-center"><h1>Dispatch Forums</h1><em>Have fun!</em></div><div class="container"><div class="page_link"><a style="color:black;" href="/forum/posts/Checking.html">max - Checking</a></div><div class="page_link"><a style="color:black;" href="/forum/posts/[EFFORT]Back on the forums .html">werdl - [EFFORT]Back on the forums </a></div><div class="page_link"><a style="color:black;" href="/forum/posts/Hi.html">teapot  - Hi</a></div><div class="page_link"><a style="color:black;" href="/forum/posts/hello.html">teapot - hello</a></div><div class="page_link"><a style="color:black;" href="/forum/posts/new design!.html">teapot - new design!</a></div><div class="page_link"><a style="color:black;" href="/forum/posts/[EFRFORT[RANT[{} CLOUDFARLE CLOUDFARLE.html">max - [EFRFORT[RANT[{} CLOUDFARLE CLOUDFARLE</a></div>

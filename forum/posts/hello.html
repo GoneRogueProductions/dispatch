@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch: Forums</title>
+    <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/forum/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<script>$(document).ready(function() {
+    $("#navbar").load("/forum/header.html");
+});</script>
+<div id="navbar">
+</div>
+
+        </div>
+
+<div class="container">
+        <!--Topic Section-->
+        <div class="topic-container">
+            <!--Original thread-->
+            <div class="head">
+                <div class="authors" style="color:white">Author</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username" style="margin-bottom: 10px;"><a href="">teapot</a></div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="Profile" style="border-radius: 25px;">
+                </div>
+                <div class="content" style="color:white; text-align: left;"><h2>hello</h2><br>
+                &lt;h1&gt;hi&lt;/h1&gt;<br />
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+        <form action="/comment_handler.php?s=hello.html" method="post">
+        <style>
+        #comment{
+            width: 90%!important;
+            border-radius: 5px;
+            border: 2px solid #0000ff;
+        }
+        #submit {
+            width: 7%;
+            min-height: 100px;
+            
+        }
+        #submit {
+    background-color: #2F02FF;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 20px;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #2F02FF;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+        </style>
+            <textarea name="comment" id="comment" placeholder="comment here ... "></textarea>
+            <input id="submit" type="submit" value="submit" class="button">
+        </form>
+        </div>
+
+
+
+        
+
+
+    <script src="main.js"></script>
+<!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username" style="margin-bottom: 10px;"><a href="">max</a></div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="" style="border-radius: 25px;">
+                </div>
+                <div class="content">hi<br />
+
+                    
+                </div>
+            </div>
+        </div>

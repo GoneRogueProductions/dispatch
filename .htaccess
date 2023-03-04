@@ -1,0 +1,14 @@
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 /errors/500.html
+
+php_flag log_errors on
+php_value error_log /spectrometric-decon/public-html/errors/PHP_errors.log
+
+RewriteEngine On
+RewriteRule ^$ /index.php [L]
+# RewriteRule codeteam.html codeteam.php
+RewriteRule chat /newinterface.php [L]
+    # this line allows direct logi
+#n to www.mysite.com/wordpress/wp-login.php
+
+

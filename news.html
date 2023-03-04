@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dispatch: Latest news</title>
+	        <meta name="description" content="The latest news from Dispatch, chat without the faff. This page has all the latest news from the devs and upcoming changes, so stay tuned so that you can have all the latest features!" />
+	        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	        <meta property="og:title" content="News - Dispatch" />
+	<meta property="og:description" content="The latest dev news from Dispatch, chat without the faff." />
+	<meta property="og:image" content="https://undiblem.sirv.com/facebook.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8">
+    <link rel="canonical" href="https://dispatch.ml/news/">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/style.css">
+
+	<script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+	
+		<meta name="robots" content="max-image-preview:large">
+		<link rel="canonical" href="https://dispatch.ml/">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="The privacy-first chatroom">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="The latest news from Dispatch, chat without the faff. This page has all the latest news from the devs and upcoming changes, so stay tuned so that you can have all the latest features!">
+		<meta property="og:url" content="https://dispatch.ml/">
+		<meta property="og:image:secure_url" content="https://undiblem.sirv.com/facebook.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Dispatch - chat without the faff">
+		<meta name="twitter:description" content="Dispatch: A no-faff simple chatroom that puts your privacy first. It's the modern chat website, but without ANY spying on you. No emails needed, no faff chatting. Simple. Join the people who care about privacy, and use Dispatch, chat without the faff.">
+		<meta name="twitter:creator" content="@uimaxbai">
+		<meta name="twitter:image" content="https://undiblem.sirv.com/facebook.png">
+        <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+            * {
+                padding: 0;
+                box-sizing: border-box;
+                margin: 0;
+            }
+            .img {
+                display: block;
+                margin-left: 0px;
+                margin-right: auto;
+                max-height: 300px;
+                height: auto;
+                width: auto\9; /* ie8 */
+                cursor: pointer;
+                padding: 1%;
+                border-radius: 15%;
+            }
+            @media (prefers-color-scheme: dark) {
+                .img {
+                    filter: brightness(0.85);
+                }
+            }
+            @media (max-width: 768px) {
+                div.u-navbar {
+                    width: 40%;
+                }
+                div.container {
+                    margin-left: 40%;
+                }
+            }
+            @media (max-width: 550px) {
+                div.u-navbar {
+                    width: 100%!important;
+                    position: absolute!important;
+                }
+                div.container {
+                    margin-left: 0!important;
+                    margin-top: 812px!important;
+                }
+                .scroll-down {
+                    display: none!important;
+                }
+            }
+            .article {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                border-left: 6px solid #2F02FF;
+                padding: 20px;
+                cursor: pointer;
+                max-width: 600px;
+                height: auto;
+                width: auto;
+            }
+            .u-navbar {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                overflow: hidden;
+                width: 30%;
+                padding: 25px;
+                margin: 0;
+                background: rgb(240,240,240);
+                padding-top: 20px;
+                color: black!important;
+            }
+            div a img {
+                display: none;
+            }
+            .container {
+                text-align: center;
+                align-items: center;
+                margin-left: 30%;
+            }
+            .s-main {
+                display: flex;
+                height: 100%;
+                width: 100%;
+            }
+            .u-navbar a {
+                background: rgb(250,250,250);
+                border-radius: 30px;
+                color: black;
+                transition: 0.5s;
+                padding: 12px;
+                width: 100%;
+                text-decoration: none;
+                text-align: left;
+                padding-bottom: 20px;
+                margin-top: 10px;
+            }
+            .tray-icons a:hover,
+            .u-navbar a:hover {
+                background: rgb(160,160,160);
+            }
+            .u-navbar a img {
+                display: flex!important;
+                border-radius: 25px;
+                width: 100%;
+                background: white;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .u-navbar a span {
+                color: lightgray;
+            }
+            .scroll-down {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                text-align: center!important;
+                color: lightgray;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .scroll-down h1 {
+                font-size: 10vh;
+            }
+            .container div h1,
+            .container div h2 {
+                margin-left: 0;
+                padding-left: 0!important;
+            }
+            .date {
+                color: lightgray;
+            }
+            .container div {
+                text-align: left;
+            }
+            .tray {
+                display: flex;
+            }
+            .tray-icons {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-right: 10px;
+            }
+            .tray-icons a {
+                background: white;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 7px!important;
+                color: var(--bs-link-color);
+                text-align:center;
+                width: 100px;
+            }
+            b a, b a:hover {
+                text-decoration:none;
+            }
+            .stackedit__html {
+                padding: 0!important;
+            }
+
+            .u-navbar h1::after,
+            .scroll-down h1::after {
+                border: 0!important;
+            }
+
+            @font-face {
+                font-family: 'Source code Pro';
+                src: url('../fonts/Source-Code-Pro-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'Optimistic';
+                src: url('../fonts/Optimistic_Display_W_Bd.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: 'Optimistic';
+                src: url('../fonts/Optimistic_Display_W_Md.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            body {
+                font-family: Optimistic,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body>
+        <section class="s-main">
+            <div class="u-navbar" style="overflow-y: scroll;">
+                <div class="tray">
+                    <div class="tray-icons">
+                        <a href="/"><i class="fa-solid fa-angle-left"></i>  Go Back</a>
+                        <a href="/newinterface.php?logout=1" style="color: red;"><i class="fa-solid fa-right-from-bracket"></i>  Logout</a>
+                    </div>
+                    <h1 style="padding: 0; margin: 0;"><img src="/android-chrome-512x512.png" style="height: 90px;">  News</h1>
+                </div>
+                <!-- <a href="#devblog1">
+                    <h1>dispatch</h1>
+                    <b>Devblog part 1 - Backend<br></b>
+                    <span>16 Jan 2023 - How does Dispatch work?</span>
+                </a> -->
+                <a href="#v2.1">
+                    <img src="/logo_2.1.png">
+                    <b>2.1 is coming out!<br></b>
+                    <span>4 March 2023 - Dispatch 2.1 is coming out soon, and we want to let you know about what is coming!</span>
+                </a>
+                <a href="#v2">
+                    <img src="/beta2.0.jpg">
+                    <b>2.0 Beta is out!<br></b>
+                    <span>19 December 2022 - Dispatch 2.0 Beta is out! We're commited to being the best, and with this new interface, we're sure you'll love it!</span>
+                </a>
+                
+                <!-- 
+                <a href="#v2">
+                    <img src="/logo_2.0.jpg">
+                    <b>2.0 is out!<br></b>
+                    <span>1 January 2022 - Dispatch 2.0 is out! We're commited to being the best, and with this new interface, we're sure you'll love it!</span>
+                </a>
+                -->
+            </div>
+            <div class="container">
+                <div class="scroll-down">
+                    <h1><i class="fa-duotone fa-down-to-line"></i></h1>
+                    <p>Scroll down to read the latest news, or click one of the articles to the left!</p>
+                </div>
+                <div id="v2.1">
+                    <h1>Dispatch 2.1 is <i>still</i> coming!</h1>
+                    <span class="date">4th March 2023</span>
+                    <div class="stackedit__html"><p>It’s only been 6(0) days but it’s felt like forever, so it deserves an update.<br>
+                        <em>Still having more changes than iOS. Yay!</em></p>
+                        <h3 id="so-heres-what-weve-done-so-far">So here’s what we’ve done so far:</h3>
+                        <ul>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> We’ve updated the landing page a little bit</li>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> The user lookup page is looking neater</li>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> We decided to update our font to Optimistic, Meta’s default font</li>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled=""> We have added fun logos with the help of open-source library Dicebear!</li>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked="false" disabled=""> We are open-sourcing Dispatch on GitHub!</li>
+                        </ul>
+                        <blockquote>
+                        <p>What it should look like.<br>
+                        <img src="https://chat.dispatch.ml/assets/img/news/optimistic.png" alt="What it should look like."></p>
+                        </blockquote>
+                        <blockquote>
+                        <p>I know, we’re thieves.</p>
+                        </blockquote>
+                        <h3 id="anyway-heres-what-is-half-done">Anyway, here’s what is half done:</h3>
+                        <ul>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Moods (say how you feel next to your name!)</li>
+                        </ul>
+                        <blockquote>
+                        <p>This is what it should look like when it is done. (It isn't).<br>
+                        You can even try changing your mood now, by clicking <a href="/profile.php">here</a>.<br>
+                        <img src="https://chat.dispatch.ml/assets/img/news/moods_preview.png" alt="What it should look like."></p>
+                        </blockquote>
+                        <ul>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Transition of messages to a MySQL database (this is a game-changer!)</li>
+                        </ul>
+                        <h3 id="what-we-havent-started-on-but-have-planned">What we haven’t started on but have planned:</h3>
+                        <ul>
+                        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Nothing yet, but we’ll update things as they happen.</li>
+                        </ul>
+                        <p>Again, thanks for helping us!</p>
+                        <p><strong>@max</strong> and <strong>@werdl</strong></p>
+                        </div>
+                </div>
+                <div id="v2">
+                    <h1>Dispatch 2.0 is out!</h1>
+                    <span class="date">1st January 2023</span>
+                    <p>After a month of tireless work, Dispatch 2.0 is out! From this new and improved news page to everything else, Dispatch has had a leg-up!</p>
+                    <p>Here are all the new features.</p>
+                    <ul>
+                        <li><p>New landing page</p></li>
+                        <li><p>New login page w/ slideshow</p></li>
+                        <li><p>Bring back the new chat interface</p></li>
+                        <li><p>MORE JAVASCRIPT</p></li>
+                        <li><p>Chats now use AJAX for faster sending w/ no redirects</p></li>
+                        <li><p>Updated upload prompt</p></li>
+                        <li><p>User Lookups</p></li>
+                        <li><p>Cookies Policy</p></li>
+                        <li><p>Reporting Function</p></li>
+                        <li><p>More Administrator features</p></li>
+                        <li><p>The great groups overhaul</p></li>
+                        <li><p>Codeteam page</p></li>
+                        <li><p>User Descriptions</p></li>
+                    </ul>
+                    <p>The AJAX was really great, and the code allows for our (laggy) free servers tp have a bit less stress, with a faster sending time for the user.</p>
+                    <p>We hope you have a great New Year, as we have.</p>
+                    <b><a href="codeteam.php#max">@max</a> and <a href="codeteam.php#werdl">@werdl</a></b>
+                </div>
+                
+                <footer class="footer bg-light" style="border-radius: 10px 10px 0 0; margin-top: 25px;">
+                    <div class="container-lg" style="padding: 25px; text-align: center;">
+                        <div class="row">
+                            <div class="col-sm h-100 text-center text-lg-start my-auto">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Scroll to top</a></li>
+                                    <li class="list-inline-item">⋅</li>
+                                    <li class="list-inline-item"><a href="/policy.html">Policies</a></li>
+                                    <li class="list-inline-item">⋅</li>
+                                    <li class="list-inline-item"><a href="/forum">Forums</a></li>
+                                    <li class="list-inline-item">⋅</li>
+                                    <li class="list-inline-item"><a href="/login.php">Login/enter</a></li>
+                                    <li class="list-inline-item">⋅</li>
+                                    <li class="list-inline-item"><a href="https://gonerogue.ml/register.php?s=phpchat">Register</a></li>
+                                    <li class="list-inline-item">⋅</li>
+                                    <li class="list-inline-item"><a href="/news">News</a></li>
+                                </ul>
+                                <p class="text-muted small mb-4 mb-lg-0">&copy; Dispatch 2022 under our <a href="policy.html">copyright policy.</a></p>
+                            </div>
+                            <div class="col-sm" style="text-align: right;">
+                                <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="https://gonerogue.ml"><img src="https://gonerogue.ml/mstile-150x150.png" style="filter: invert(33%) sepia(83%) saturate(4148%) hue-rotate(209deg) brightness(101%) contrast(99%); display: inline; width: 100px; height: 100px;"></a>
+                            </li>
+                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<style>
+    .cookies-c {
+        z-index: 99997089687968795695768576857865786578657865786568756785;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        border-radius: 25px 25px 0 0;
+        padding: 25px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    .cookies-row div div h1,
+    .cookies-row div div b,
+    .cookies-row div div h4,
+    .cookies-row div div p {
+        color: black!important;
+    }
+    .cookies-row div div,
+    .cookies-row div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black!important;
+    }
+    .cookies-row div div h1,
+    .cookies-row div h1 {
+        padding: 0;
+        margin: 0;
+    }
+    .c-explanation {
+        text-align: left;
+    }
+    .cookies-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cookies-c span {
+        color: lightgray!important;
+        cursor: pointer;
+    }
+    .l-row {
+        display: flex;
+        flex-direction: row!important;
+        gap: 50px;
+    }
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
+<div class="cookies-c">
+    <span onclick="expandBox();"><i class="fa-solid fa-angle-up"></i></span>
+    <div class="cookies-row">
+        <div class="l-row">
+            <div>
+                <h1><i class="fa-sharp fa-solid fa-cookie-bite"></i></h1>
+                <b>Cookies</b>
+            </div>
+            <div class="c-explanation">
+                <h4>Let's not keep you waiting.</h4>
+                <p>We only use cookies for <b>necessary purposes</b>. Click the arrow above to learn more.</p>
+            </div>
+        </div>
+        <div class="button-row">
+            <button type="button" onclick="location.href='/cookies.php?c=c';" class="btn btn-primary"><b>Accept</b></button>
+            <button type="button" onclick="makeSure();" class="btn btn-primary">Reject (can't chat)</button>
+        </div>
+    </div>
+</div>
+<script>
+    function expandBox() {
+        location.href="/policy.html#cok";
+    }
+    function makeSure() {
+      let text = "Are you sure? You will not be able to use Dispatch.";
+      if (confirm(text) == true) {
+        location.href="/cookies.php?c=d";
+      }
+}
+</script>

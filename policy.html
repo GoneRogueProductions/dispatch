@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+                <title>Dispatch: A no-faff chatroom that cares about privacy</title>
+        <meta name="description" content="Dispatch: A no-faff simple chatroom that puts your privacy first. No emails needed, no faff chatting. Simple." />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #444!important;
+        color: white!important;
+    }
+    .bg-light {
+        background: #333!important;
+    }
+    .nav-link {
+        color: white;
+    }
+    
+}
+    html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+    @media only screen and (max-width: 767px) {
+        #navbar {
+            display: none;
+        }
+        #col1 {
+            display: none;
+        }
+        #icol {
+            display: none;
+        }
+        .col-9 {
+            width: 90%!important;
+            margin: auto;
+        }
+        .col-3 {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .topnav {
+            display: none;
+        }
+        
+    }
+.topnav {
+  overflow: hidden;
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+#btn1 {
+    width: 80%;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #444!important;
+        color: white!important;
+    }
+}
+</style>
+    </head>
+    <body>
+        <div id="page-content">
+            <div class="topnav">
+  <a href="/index.php">Dispatch</a>
+  <div id="myLinks">
+      <a href="/index.php">Dispatch Home</a>
+    <a href="/login.php" class="phpchat">Login/enter</a>
+    <a href="https://gonerogue.ml/register.php?s=phpchat">Register</a>
+    <a href="/policy.html">Policies</a>
+    <!-- <a href="https://gonerogue-unblocker.herokuapp.com/">Unblockеr</a> -->
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <script>
+function hamburger() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</div>
+<!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top sticky-top">
+            <style>
+                @media (max-width: 400px) {
+                    .navbar-container {
+                        justify-content: center!important;
+                        align-items: center!important;
+                    }
+                }
+                @media (max-width: 1200px) {
+                    .nav-form {
+                        display: none!important;
+                    }
+                }
+                @media (max-width: 428px) {
+                    .nav-register {
+                        display: none!important;
+                    }
+                }
+            </style>
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="/"><img src="/logo.png" style="display: inline; height: 50px;"></a>
+                <div class="nav-form">
+                    <form class="form-subscribe" id="contactForm" action="https://gonerogue.ml/register.php" method="post">
+                                <!-- Email address input-->
+                                <div class="row">
+                                    <div class="col nav-call" style="display: flex; align-items: center; padding-right: 0;">
+                                        <p style="margin-bottom: 0;">Register <b>NOW</b> and get started!</p>
+                                    </div>
+                                    <div class="col nav-call" style="padding-left: 0;">
+                                        <input class="form-control form-control-lg" id="emailAddress" type="text" placeholder="Username" name="email" style="height: 50px; min-height: 50px;" />
+                                    </div>
+                                    <div class="col-auto nav-call"><input type="submit" class="btn btn-primary btn-lg nav-call" id="submitButton" value="Register" style="height: 50px; min-height: 50px; padding: 10px;" /></div>
+                                </div>
+                            </form>
+                            <!-- Navbar JS -->
+                    <script>
+                        let scrollerBlock = $(".nav-call");
+                        let regBut = $(".nav-register");
+                        scrollerBlock.fadeOut(0);
+                     regBut.fadeIn(0);
+
+
+                        $(window).scroll(function() {
+                          if ($(this).scrollTop() > 0) {
+                            scrollerBlock.fadeIn(400);
+                            regBut.fadeOut(0);
+                          } else {
+                            scrollerBlock.fadeOut(0);
+                            regBut.fadeIn(400);
+                          }
+                        });
+                    </script>
+                </div>
+                <div>
+                    <a class="btn btn-primary" href="/login.php">Login/enter</a>
+                    <a class="btn btn-primary nav-register" href="https://gonerogue.ml/register.php?s=phpchat">Register</a>
+                    <a class="btn btn-primary nav-register" href="/policy.html">Policies</a>
+                </div>
+                
+            </div>
+        </nav>
+
+<div class="row" id="vnav">
+    <div class="col-3">
+    <nav class="navbar bg-light" style="padding-left: 25px; height: 100%; text-align: left; align-items: flex-start;">
+  <ul class="navbar-nav" style="position: fixed;">
+    <li class="nav-item">
+      <a class="nav-link" href="#pri">Privacy Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cok">Cookie Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#dat">Data Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mis">Mission statement</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cop">Copyright Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#chat">Chat and Forum Policy</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="col-9" style="text-align: left; margin-top: 10px;">
+    <div id="pri" style="margin-bottom: 50px;">
+        <h1 style="padding-left: 0;">Privacy Policy</h1>
+        <h2>We have a simple privacy policy: and that is to only use your chat data and name for the intended puropses, ie:</h2>
+      <p>• To display your name in the chat;</p>
+      <p>• To give you our services for chat;</p>
+      <p>• And data is <b>never</b> given to any third party.</p>
+    <p>When you use our services, however, you acknowledge the fact that your data is public to anyone who may want to use or sell this data.</p>
+    <p>Likewise, that means that your data is not encrypted. That means that we do not clain responsibility for any lost or stolen personal information.</p>
+    <p>However, we can guarantee that any data deleted from the public chatbox will also be deleted automatically on our database.</p>
+    <p>Direct Messages: When you press 'Delete All', all messages are deleted.<br>
+    However, we cannot guarantee full privacy of direct messages. Sorry.</p>
+    </div>
+    <hr>
+    <div id="cok" style="margin-bottom: 50px;">
+        <h1 style="padding-left:0;">Cookie Policy <i class="fa-solid fa-cookie-bite"></i></h1>
+        <h2>We use cookies for only essential purposes, like</h2>
+        <ul class="list">
+            <li><i class="fa-solid fa-sharp fa-user-check"></i>  Storing your login info so you don't have to login again.</li>
+            <li><i class="fa-solid fa-sharp fa-user-lock"></i>  Encrypting your user data.</li>
+            <li><i class="fa-solid fa-sharp fa-user-lock"></i><b>  And we promise, all this is encrypted and only stored on your device so that aliens can't access them.</b> <i class="fa-solid fa-spaghetti-monster-flying"></i> <i class="fa-solid fa-user-alien"></i></li>
+        </ul>
+        <hr>
+        
+    </div>
+    <div id="dat" style="margin-bottom: 50px;">
+        <h1 style="padding-left:0;">Data Policy</h1>
+        <h2>We only store data that is needed for PHPChat to work, like</h2>
+        <ul class="list">
+            <li><i class="fa-solid fa-sharp fa-comment-check"></i>  Storing your entered messages so that people can message you.<em style="color: lightgrey;"><br>Only you and others who have accesss to the chatroom can look at your messages.</em></li>
+            <li><i class="fa-light fa-users-between-lines"></i>  to identify you from other people by only using your username and password given.</li>
+            <li><i class="fa-solid fa-sharp fa-user-shield"></i>  And only you know your password, even we can't see it.</li>
+            <li><i class="fa-solid fa-sharp fa-lock-keyhole"></i>  And again, all of this information (except chat logs and usernames) are fully encrypted and sent via 256-bit SSL.</li>
+            <br><br><br><i style="color: lightgray;">For some reason, school computers class this website as malicous. Do not trust these warnings.</i>
+            </ul>
+    </div>
+    <div id="mis" style="margin-bottom: 50px;">
+        <h1 style="padding-left:0;">
+    Mission Statement
+</h1>
+<h2>
+    Our mission is to make quality software that serves people.
+    We don't steal your data.
+    We use free services, and you never pay for anything.
+    We don't use ads, and don't sell your data.
+    You may think that WhatsApp is secure, but in the current day and age it is not, unfortunately.
+    The internet today is controlled by bige tech companies.
+    Lets change that, one small step at a time.
+</h2>
+    </div>
+    <div id="cop">
+        <h1 style="padding-left:0;">Copyright Policy</h1>
+        <h3>We don't like copyrighting things, but we think that our property deserves to be ours.</h3>
+        <p>We are planning to release to Github. For now, here's what you need to know:</p><br><br>
+        <h4>Dispatch's software is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3.0.</a></h4>
+        <h2>What is that?</h2>
+        <p>The GNU General Public License v3.0 (often shortened to GNU-GPLv3 or even GPL) is a copyleft license made for software and other kinds of things. It outlines that:</p>
+        <ol>
+            <li><p>You have to credit the author (me) if you want to distribute this piece of software.</p></li>
+            <li><p>You can adapt upon this piece of software.</p></li>
+            <li><p>You must release your adaptation of this piece of software under the same license as this one.</p></li>
+        </ol>
+        <h4>Dispatch is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU-GPL license.</a> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Dispatch's Logos </span> are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p></h4>
+        <h2>What is that?</h2>
+        <p>This particular Creative Commons license says that:</p>
+        <ol>
+            <li><p>You have to credit the author (me) if you want to distribute these logos.</p></li>
+            <li><p>You may <b>not</b> adapt upon these logos and release them.</p></li>
+            <li><p>You cannot use these logos for commercial purposes.</p></li>
+            <li><p>You are free to share this logo.</p></li>
+        </ol>
+    </div>
+    <div id="chat">
+        <h1 style="padding-left:0;">Chat and Forums Policy</h1>
+        <em>We need a policy for things to not go wrong.</em>
+        <p>We ask of a few simple things:</p>
+        <ol>
+            <li><p>That you don't post harassing texts/images anywhere</p></li>
+            <li><p>Especially with images, no explicit content anywhere</p></li>
+            <li><p>No spam is allowed, he have a spam filter to stop this</p></li>
+            <li><p>Our word filter can't block everything, so no rude messages</p></li>
+            <li><p>Again, no racism/sexist comments</p></li>
+        </ol>
+        <h3>Thanks for complying with these rules, they make Dispatch a happier place!</h3>
+    </div>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50" style="bottom: 0;">
+    <div class="container text-center">
+      <small>&copy Dispatch 2022. Dispatch is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU-GPL license.</a> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Dispatch's Logos </span> are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p></small>
+    </div>
+  </footer>
+
+    </body>
+</html>

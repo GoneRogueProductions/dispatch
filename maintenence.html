@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+	    window.location.href="/";
+	</script>
+	<title>Dispatch: Maintenance</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://getchord.ml/main.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+	<style>
+	    :root {
+			--c-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+			--c-lg-100: rgb(200,200,200);
+		}
+    	@media (prefers-color-scheme: dark) {
+            body {
+                background: black!important;
+                color: white;
+            }
+            .admin,
+            .gonerogue {
+                background: white;
+            }
+        }
+    	div a img {
+    	    display: none;
+    	}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			font-family: var(--c-sans-serif);
+			overflow: hidden;
+		}
+		
+
+		.logo {
+			animation-fill-mode: forwards;
+			animation-name: logo-transform;
+			animation-duration: 3s;
+			animation-delay: 1s;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			height: 25%;
+			
+			background: white;
+			padding: 10px;
+			cursor:pointer;
+			z-index: 99;
+			border-radius: 25px;
+			
+		}
+		.admin:hover,
+		.gonerogue:hover,
+		.logo:hover {
+			background: var(--c-lg-100);
+		}
+		.admin,
+		.gonerogue {
+		    right: 20px;
+		    position: absolute;
+		    top: 20px;
+		    color: black;
+		    padding: 15px;
+		    border-radius: 10px;
+		    cursor: pointer;
+		}
+		.admin {
+		    right: 150px;
+		}
+		
+		.page-content {
+			display: flex;
+			height: 95vh;
+			align-items: center;
+		}
+		#maintenence-p {
+			font-size: 25vh;
+			font-weight: bolder;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			background-image: url("https://undiblem.sirv.com/maintenence.gif");
+		}
+		
+		.explanation {
+			text-align: center;
+			width: 100%;
+		}
+		
+		@media (min-width:500px) {
+		    @keyframes logo-transform {
+    			from {
+    				top: 50%;
+    				left: 50%;
+    				height: 25%;
+    				transform: translate(-50%, -50%);
+    				border-radius: 25px;
+    			}
+    			to {
+    				top: 20px;
+    				left: 20px;
+    				height: 100px;
+    				transform: translate(0);
+    				border-radius: 10px;
+    			}
+		    }
+		    
+		    .page-content {
+		        justify-content: center;
+			    text-align: center;
+		    }
+		}
+		@media (max-width:449px) {
+		    .logo {
+		        width: 75%;
+		        top: 50px;
+		        height: auto;
+		        margin-top: 100px;
+		    }
+		    .page-content {
+		        height: 85vh;
+		        word-wrap: normal;
+		        overflow: hidden;
+		    }
+		    @keyframes maintenence-loop {
+		        from {
+		            transform: translateX(0);
+		        }
+		        to {
+		            transform: translateX(-80%);
+		        }
+		    }
+		    #maintenence-p {
+		        animation-name: maintenence-loop;
+		        animation-duration: 3s;
+		        animation-delay: 1s;
+		        animation-iteration-count: infinite;
+		        animation-direction: alternate;
+		    }
+		    
+		    .explanation {
+		        text-align: left;
+		        margin-left: 10px;
+		        width: 100%;
+		    }
+		}
+    </style>
+</head>
+
+<body>
+	<!-- <div class="page-content">
+		<p id="maintenence-p" style="z-index: 9;">When I fix the bug</p>
+		<p id="maintenence-p" style="color: black; position: absolute;">When I fix the bug</p>
+	</div>
+	<div class="explanation">
+		<h2>Dispath has security issues. I am fixing them, then it will be back up. Thanks, werdl</h2>
+	</div> -->
+	
+</body>
+</html>

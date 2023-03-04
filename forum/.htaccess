@@ -1,0 +1,4 @@
+ErrorDocument 404 https://dispatch.ml/errors/404.html
+ErrorDocument 500 https://dispatch.ml/errors/500.html
+RewriteEngine On
+RewriteRule ^$ /forum/links.html [L]

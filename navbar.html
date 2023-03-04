@@ -1,0 +1,404 @@
+<style>
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black!important;
+        color: white!important;
+    }
+    .bg-light {
+        background: rgb(50,50,50,0.95)!important;
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+  #auth {
+    display: none;
+  }
+}
+</style>
+<style>
+
+  @media only screen and (max-width: 1200px) {
+      #auth {
+          display: none;
+      }
+  }
+</style>
+<style>
+  .topnav {
+      position: sticky;
+  }
+
+  @media only screen and (max-width: 767px) {
+      #navbar {
+          display: none;
+      }
+
+      #col1 {
+          display: none;
+      }
+
+      #icol {
+          display: none;
+      }
+
+      .col-9 {
+          width: 100% !important;
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+      .topnav {
+          display: none;
+      }
+
+  }
+
+  .topnav {
+      overflow: hidden;
+      background-color: lightgray;
+      position: relative;
+  }
+
+  #btn1 {
+      width: 80%;
+  }
+
+  .topnav #myLinks {
+      display: none;
+  }
+
+  .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+  }
+
+  .topnav a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+  @media (prefers-color-scheme: dark) {
+      body {
+          background: #444 !important;
+          color: white !important;
+      }
+  }
+  .topnav {
+      top: 0!important;
+      left:0!important;
+      position: sticky!important;
+  }
+</style>
+<style>
+            .navigation1 {
+                display: none;
+            }
+            @media only screen and (max-width: 936px) {
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            :root {
+                --clr: #222327;
+            }
+            body {
+                
+                min-height: 100vh;
+                font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",sans-serif;
+            }
+            .navigation1 {
+                position: sticky;
+                left: 0;
+                bottom:0;
+                height: 70px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                z-index: 99999999;
+            }
+            .navigation1 ul {
+                display: flex;
+                width: 350px; 
+                padding:0;
+                margin-bottom: 20px;
+            }
+            .navigation1 ul li {
+                position: relative;
+                list-style: none;
+                width:70px;
+                height:70px;
+                z-index: 1;
+                display:flex;
+            }
+            .navigation1 ul li a {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                text-align:center;
+                font-weight: 500;
+            }
+            .navigation1 ul li a .icon1 {
+                position:relative;
+                display: block;
+                line-height: 75px;
+                font-size: 1.5em;
+                text-align:center;
+                transition: 0.5s;
+                color: var(--clr);
+            
+            }
+            .navigation1 ul li:hover a .icon1 {
+                color: #888;
+            }
+            .navigation1 ul li a .text1 {
+                position: absolute;
+                color: var(--clr);
+                font-weight: 400;
+                font-size: 0.75em;
+                letter-spacing: 0.05em;
+                transition: 0.5s;
+                transform: translateY(25px);
+            }
+            .navigation1 ul li:hover a .text1 {
+                color: #888;
+            }
+            .navigation1 ul li.active a .icon1 {
+                color: #0000ff;
+            }
+            @media only screen and (min-width: 937px) {
+                .navigation1 {
+                    display: none;
+                }
+                .back {
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 767px) {
+                .main {
+                    position: absolute!important;
+                    top: 0!important;
+                    height: calc(100% - 70px - 66px)!important;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                }
+                #uploadForm {
+                    background: white;
+                    border-radius: 10px;
+                    margin:0 20px!important;
+                    margin-bottom: 150px!important;
+                    z-index:9;
+                }
+                .reminder {
+                    display:none!important;
+                }
+                .messages {
+                   bottom: 70px!important;
+                    position:sticky;
+                    width:100%;
+                    font-size: 2vh;
+                }
+                .main {
+                    height: calc(100% - 70px) !important;
+                    font-size: 3vh!important;
+                    width: 100%;
+                }
+            }
+            }
+            .main {
+                font-size: 3vh!important;
+            }
+            .messages {
+                font-size: 2vh;
+            }
+            </style>
+
+<div class="nav-container" style="position: absolute; width: 100%; bottom: 0; left: 0;">
+    <div class="navigation1" style="position: sticky; width: 100%;">
+                        <ul>
+                            <li class="list">
+                                <a href="/">
+                                    <span class="icon1"><i class="fa-solid fa-house"></i></span>
+                                    <span class="text1">Home</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="/profile.php">
+                                    <span class="icon1"><i class="fa-solid fa-user"></i></span>
+                                    <span class="text1">Profile</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="/news">
+                                    <span class="icon1"><i class="fa-solid fa-newspaper"></i></span>
+                                    <span class="text1">News</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="/forum">
+                                    <span class="icon1"><i class="fa-solid fa-align-left"></i></span>
+                                    <span class="text1">Forums</span>
+                                </a>
+                            </li>
+                            <li class="list active">
+                                <a href="/newinterface.php">
+                                    <span class="icon1"><i class="fa-solid fa-comment"></i></span>
+                                    <span class="text1">Ch&#1072;t</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+</div>
+
+
+            <!-- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: sticky; height: 65px;">
+<a class="navbar-brand" href="#">
+    <img src="logo.png" height="30" style="margin-left: 10px;" alt="Dispatch Logo">
+  </a>
+
+
+        <a class="nav-link" href="index.php" style="margin-right: 25px;"><i class="fa-solid fa-house"></i>    Home</a>
+
+        <a class="nav-link" href="login.php" style="margin-right: 25px;"><i class="fa-solid fa-user-lock"></i>    Login/enter</a>
+        <a class="nav-link" href="/forum" ><i class="fa-solid fa-align-left"></i>    Forums</a>
+        
+        <form class="form-inline" id="auth" action="authenticate.php" method="post">
+    <div class="input-group" id="login">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input name="username" id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+    <div class="input-group" id="login">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">🔑</span>
+      </div>
+      <input name="password" id="password" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <input class="btn btn-outline-success" type="submit" value="Login" />
+    
+  </form>
+  <form class="form-inline" action="profile.php" id="profile">
+      <input class="btn btn-outline-success" type="submit" value="Profile" />
+  </form>
+  
+  
+  <a class="nav-link" href="https://gonerogue.ml/register.php?s=phpchat" style="margin-right: 25px;"><i class="fa-solid fa-user-plus"></i>    Register</a>
+        
+        <a class="nav-link" href="policy.html" style="margin-right: 25px;"><i class="fa-solid fa-user-police"></i>    Policies</a>
+        <a class="nav-link" href="news.html" style="margin-right: 25px;"><i class="fa-solid fa-newspaper"></i>    Latest News</a>
+  </nav> -->
+<!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top sticky-top">
+            <style>
+                @media (max-width: 400px) {
+                    .navbar-container {
+                        justify-content: center!important;
+                        align-items: center!important;
+                    }
+                }
+                @media (max-width: 1200px) {
+                    .nav-form {
+                        display: none!important;
+                    }
+                }
+                @media (max-width: 428px) {
+                    .nav-register {
+                        display: none!important;
+                    }
+                }
+                .nav-call {
+                    display: none;
+                }
+            </style>
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="/"><img src="/logo.png" style="display: inline; height: 50px;border-radius:10px" alt="Dispatch Logo 2.0 Beta"></a>
+                <div class="nav-form">
+                    <form class="form-subscribe" id="contactForm" action="/login.php" method="post">
+                                <!-- Email address input-->
+                                <div class="row">
+                                    <div class="col nav-call" style="display: flex; align-items: center; padding-left: 0;">
+                                        <p style="margin-bottom: 0;">Register <b>NOW</b> and get started!</p>
+                                    </div>
+                                    <div class="col nav-call" style="padding: 0;">
+                                        <input class="form-control" id="emailAddress" type="text" placeholder="Username" name="email" />
+                                    </div>
+                                    <div class="col-auto nav-call"><input type="submit" class="btn btn-primary nav-call" id="submitButton" value="Register" style="height: 50px; min-height: 50px; padding: 10px;" /></div>
+                                </div>
+                            </form>
+                            <!-- Navbar JS -->
+                    
+                </div>
+                <style>
+                   
+                        .linkBlock {
+                            display: inline-block;
+                        }
+                        @media (max-width: 728px) {
+                            .linkBlock {
+                                display: none;
+                            }
+                        }
+                        @font-face {
+     font-family: 'Optimistic';
+     src: url('../fonts/Optimistic_Display_W_Bd.woff2') format('woff2');
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+}
+ @font-face {
+     font-family: 'Optimistic';
+     src: url('../fonts/Optimistic_Display_W_Md.woff2') format('woff2');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+}
+body {
+    font-family: Optimistic,var(--bs-font-sans-serif);
+}
+                </style>
+                <div>
+                    <a class="btn btn-primary" href="/login.php">Login/enter</a>
+                    <div class="linkBlock">
+                        <a class="btn btn-primary nav-register" href="/forum">Forums</a>
+                        <a class="btn btn-primary nav-register" href="/policy.html">Policies</a>
+                        <a class="btn btn-primary nav-register" href="/news">News</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <script>
+                let scrollerBlock = $(".nav-call");
+                let regBut = $(".linkBlock");
+                scrollerBlock.fadeOut(0);
+             regBut.fadeIn(0);
+
+
+                $(window).scroll(function() {
+                  if ($(this).scrollTop() > 600) {
+                    scrollerBlock.fadeIn(400);
+                    regBut.fadeOut(0);
+                  } else {
+                    scrollerBlock.fadeOut(0);
+                    regBut.fadeIn(400);
+                  }
+                });
+            </script>
+        </nav>

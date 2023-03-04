@@ -1,0 +1,11 @@
+<style> .userlink { color:white!important; text-decoration:none; } #cont { width:auto; border-radius:10px; } </style>
+ <script> 
+ function ajax(div,file) { 
+     console.log(div,file); 
+     const xhttp = new XMLHttpRequest(); 
+     xhttp.onload = function() { document.getElementById(div).innerHTML = this.responseText; } 
+     xhttp.open("GET", file, true); xhttp.send(); } 
+     function hov(name,id) { ajax(id,('user.php?u='+name+'&api=true')); } 
+     function nomorehov(div) { document.getElementById(div).innerHTML=null; } </script><div class='msgln' id='max' onmouseover='javascript:ajax(,'user.php?u=max&api=true')'><div id=''></div><span class='chat-time'>09/01 16:07 UTC</span> <b class='user-name' style='background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+      background-size: 800%!important;'><a class='userlink' href='user.php?u=max'>max  <i class='fa-solid fa-badge-check'></i></a></b> hi Super<br></div><div class='msgln' id='max' onmouseover='javascript:ajax(,'user.php?u=max&api=true')'><div id=''></div><span class='chat-time'>28/01 15:25 UTC</span> <b class='user-name' style='background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+      background-size: 800%!important;'><a class='userlink' href='user.php?u=max'>max  <i class='fa-solid fa-badge-check'></i></a></b> sus<br></div>

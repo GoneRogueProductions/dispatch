@@ -13,11 +13,11 @@
 - User lookup
 - Admin features
 ### How
-![stack1](https://skillicons.dev/icons?i=js,html,css,bootstrap,jquery)](https://skillicons.dev)
+![stack1](https://skillicons.dev/icons?i=js,html,css,bootstrap,jquery)
 
-![stack2](https://skillicons.dev/icons?i=php,mysql)](https://skillicons.dev)
+![stack2](https://skillicons.dev/icons?i=php,mysql)
 
-![stack3](https://skillicons.dev/icons?i=linux,bash)](https://skillicons.dev)
+![stack3](https://skillicons.dev/icons?i=linux,bash)
 ### Mission Statement
 Our mission is to make quality software that serves people. We don't steal your data. We use free services, and you never pay for anything. We don't use ads, and don't sell your data. You may think that WhatsApp is secure, but in the current day and age it is not, unfortunately. The internet today is controlled by bige tech companies. Lets change that, one small step at a time.
 Copyright Policy

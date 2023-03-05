@@ -81,12 +81,16 @@ Y --> A
 Y --> D
 
 style A fill:#F00
+style A color:#FFF
 style D fill:#F00
-
+style D color:#FFF
 style B fill:#FF0
 style E fill:#FF0
-
+style E color:#000
+style B color:#000
 style F fill:#0F0
 style C fill:#0F0
+style F color:#000
+style C color:#000
 ```
 - You can find out more at various places on our website

@@ -22,8 +22,9 @@ The GNU General Public License v3.0 (often shortened to GNU-GPLv3 or even GPL) i
     You must release your adaptation of this piece of software under the same license as this one.
 
 #### Dispatch is licensed under the GNU-GPL license.
-![termtosvg_428tpz8n](https://user-images.githubusercontent.com/116349156/222968314-f9c8fa3b-c773-4bc2-8604-f38adc06b7e4.svg)
 
+![termtosvg_sfzkpsa_](https://user-images.githubusercontent.com/116349156/222968449-c8c634c2-8298-42d6-8f1e-761612515f6d.svg)
+<!-- termtosvg is very cool! -->
 
 Dispatch's Logos are licensed under CC BY-NC-ND 4.0
 What is that?
@@ -34,3 +35,4 @@ This particular Creative Commons license says that:
 - You cannot use these logos for commercial purposes.
 - You are free to share this logo.
 
+![termtosvg_f1rvvxq7](https://user-images.githubusercontent.com/116349156/222968668-029e6695-8266-4501-ba7d-b6ae8f1a9f9b.svg)

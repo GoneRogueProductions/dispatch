@@ -47,7 +47,6 @@ This particular Creative Commons license says that:
 - You cannot use these logos for commercial purposes.
 - You are free to share this logo.
 - If in doubt, contact us at [dispatch.ml@proton.me](mailto:dispatch.ml@proton.me)
-![termtosvg_f1rvvxq7](https://user-images.githubusercontent.com/116349156/222968668-029e6695-8266-4501-ba7d-b6ae8f1a9f9b.svg)
 ### Contributors guide
 - The code is a mess.
 <pre>

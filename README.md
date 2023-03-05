@@ -90,3 +90,9 @@ style F fill:#0F0
 style C fill:#0F0
 ```
 - You can find out more at various places on our website
+#### List
+- [@max](github.com/uimaxbai) - Frontend and some backend
+- [@werdl](github.com/werdl) - Backend and forums
+- [@teapot](github.com/thisiscoding1234) - Some random things
+- [@2010person](github.com/2010person) - Admin stuff
+- [@froggo](no-github-yet) - logos (artist)

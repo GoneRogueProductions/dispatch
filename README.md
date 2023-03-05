@@ -95,8 +95,8 @@ style C color:#000
 ```
 - You can find out more at various places on our website
 #### List
-- ![max](https://avatars.githubusercontent.com/max)[@max](github.com/uimaxbai) - Frontend and some backend
-- ![werdl](https://avatars.githubusercontent.com/werdl) [@werdl](github.com/werdl) - Backend and forums
-- ![teapot](https://avatars.githubusercontent.com/thisiscoding1234) [@teapot](github.com/thisiscoding1234) - Some random things
-- ![2010person](https://avatars.githubusercontent.com/2010person) [@2010person](github.com/2010person) - Admin stuff
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=50 /> [@max](github.com/uimaxbai) - Frontend and some backend
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=50 /> [@werdl](github.com/werdl) - Backend and forums
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=50 /> [@teapot](github.com/thisiscoding1234) - Some random things
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=50 />[@2010person](github.com/2010person) - Admin stuff
 - [@froggo](no-github-yet) - logos (artist)

@@ -34,7 +34,7 @@ The GNU General Public License v3.0 (often shortened to GNU-GPLv3 or even GPL) i
 
     You must release your adaptation of this piece of software under the same license as this one.
 
-#### Dispatch is licensed under the GNU-GPL license.
+#### Dispatch is licensed under the GNU-GPLv3 and later license.
 ![termtosvg_sfzkpsa_](https://user-images.githubusercontent.com/116349156/222968449-c8c634c2-8298-42d6-8f1e-761612515f6d.svg)
 <!-- termtosvg is very cool! -->
 

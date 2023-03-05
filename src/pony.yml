@@ -1,0 +1,153 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/werdl/dispatch
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 116
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 64
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 2606
+    content: "\e[?2004h\e]0;werdl@BjornAgain: ~/dispatch\a\r\r\n\e(B\e[m\e[1m\e[38;5;2mwerdl\e(B\e[m@\e(B\e[m\e[1m\e[38;5;202mBjornAgain \e(B\e[m : \e(B\e[m\e[38;5;38mSun Mar 05\e(B\e[m [\e(B\e[m\e[38;5;201m14:56\e(B\e[m] \r\r\n[\e(B\e[m\e[38;5;51m~/dispatch\e(B\e[m] \e(B\e[m\e[1m\e[38;5;129m$\e(B\e[m \e(B\e[m"
+  - delay: 668
+    content: p
+  - delay: 64
+    content: o
+  - delay: 320
+    content: 'n'
+  - delay: 224
+    content: 'y'
+  - delay: 112
+    content: s
+  - delay: 176
+    content: a
+  - delay: 95
+    content: 'y'
+  - delay: 209
+    content: ' '
+  - delay: 176
+    content: c
+  - delay: 175
+    content: o
+  - delay: 113
+    content: p
+  - delay: 143
+    content: 'y'
+  - delay: 128
+    content: l
+  - delay: 191
+    content: e
+  - delay: 144
+    content: f
+  - delay: 80
+    content: t
+  - delay: 512
+    content: "\r\n\e[?2004l\r"
+  - delay: 83
+    content: "\e[0m\e[0m __________ \e[0m\r\n\e[0m< copyleft\e[0m >\e[0m\r\n\e[0m ---------- \e[0m\e[00m\r\n  \e[0m\\\e[0m                            \e[00m\r\n   \e[0m\\\e[0m                           \e[00m\r\n    \e[0m\\\e[0m                          \e[00m\r\n    \e[38;5;102m▄▄\e[48;5;102;38;5;252m▄▄\e[38;5;102m█\e[38;5;252m▄▄\e[38;5;102m█\e[38;5;252m▄\e[49;38;5;102m▄\e[48;5;60;38;5;60m█\e[38;5;109m▄\e[49;38;5;60m▄\e[39m              \e[00m\r\n  \e[38;5;102m▄\e[48;5;102;38;5;252m▄\e[48;5;252;38;5;102m▄\e[38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m█\e[38;5;103m▄\e[48;5;60;38;5;109m▄\e[49;38;5;60m▄\e[39m             \e[00m\r\n\e[38;5;102m▄\e[48;5;102;38;5;252m▄\e[48;5;252m█\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;109;38;5;109m██\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m█\e[48;5;60;38;5;60m█\e[49;39m             \e[00m\r\n\e[48;5;102;38;5;102m█\e[48;5;252m▄▄\e[48;5;102m█\e[48;5;252m▄▄\e[48;5;102m█\e[48;5;252m▄▄\e[48;5;102;38;5;109m▄▄▄\e[48;5;109m████\e[38;5;60m▄\e[48;5;60;38;5;252m▄\e[49;38;5;102m▄\e[39m            \e[00m\r\n  \e[48;5;60;38;5;60m█\e[48;5;250;38;5;232m▄\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m███\e[38;5;232m▄▄▄▄\e[38;5;109m█\e[38;5;232m▄\e[38;5;109m█\e[38;5;102m▄\e[48;5;60;38;5;252m▄\e[48;5;252m█\e[48;5;102;38;5;102m█\e[49;39m            \e[00m\r\n  \e[48;5;60;38;5;102m▄\e[48;5;231;38;5;232m▄\e[48;5;232m█\e[48;5;109;38;5;109m██\e[48;5;232;38;5;232m██\e[48;5;231;38;5;231m██\e[48;5;101;38;5;101m█\e[48;5;232;38;5;232m█\e[48;5;109m▄\e[38;5;102m▄\e[48;5;102;38;5;252m▄\e[48;5;252m█\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m█\e[48;5;102;38;5;102m█\e[49;39m           \e[00m\r\n \e[38;5;102m▄\e[48;5;102;38;5;250m▄\e[48;5;250;38;5;60m▄\e[48;5;232m▄\e[48;5;109;38;5;109m██\e[48;5;232m▄\e[38;5;232m█\e[38;5;231m▄\e[38;5;144m▄\e[48;5;144;38;5;231m▄\e[48;5;232;38;5;103m▄\e[48;5;109;38;5;109m█\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m█\e[38;5;102m▄\e[48;5;102;38;5;252m▄\e[48;5;252m█\e[48;5;102;38;5;102m█\e[49;39m           \e[00m\r\n \e[48;5;102;38;5;102m█\e[48;5;250;38;5;250m█\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m██\e[38;5;60m▄\e[38;5;109m█\e[48;5;144m▄▄\e[48;5;109m█\e[48;5;103m▄\e[48;5;109m█\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252m▄▄\e[48;5;102m█\e[49;39m   \e[38;5;102m▄▄▄▄\e[39m    \e[00m\r\n \e[48;5;102;38;5;102m█\e[48;5;250;38;5;250m██\e[48;5;60;38;5;102m▄\e[38;5;250m▄\e[38;5;60m█\e[48;5;109m▄▄▄▄\e[48;5;60;38;5;109m▄\e[48;5;109m█\e[48;5;102m▄\e[38;5;60m▄\e[49;38;5;102m▀▀\e[39m    \e[38;5;102m▄\e[48;5;102;38;5;252m▄\e[48;5;252;38;5;102m▄▄\e[38;5;252m██\e[48;5;102m▄\e[49;38;5;102m▄\e[39m  \e[00m\r\n \e[48;5;102;38;5;102m█\e[48;5;250m▄▄\e[48;5;102m█\e[48;5;250m▄▄\e[48;5;102m█\e[49m▀▀\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m████\e[48;5;60m▄\e[49;38;5;60m▄▄\e[48;5;60;38;5;109m▄▄▄\e[48;5;252;38;5;60m▄\e[49;38;5;102m▀\e[48;5;252m▄\e[38;5;252m█\e[48;5;102m▄\e[48;5;252;38;5;102m▄\e[38;5;252m█\e[48;5;102m▄\e[49;38;5;102m▄\e[39m \e[00m\r\n          \e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m███████████\e[48;5;60;38;5;60m█\e[49;39m \e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m█\e[48;5;102m▄\e[48;5;252;38;5;102m▄\e[38;5;252m█\e[48;5;102m▄\e[49;38;5;102m▄\e[39m\e[00m\r\n          \e[48;5;60;38;5;240m▄\e[48;5;109;38;5;60m▄\e[38;5;109m██\e[38;5;60m▄\e[38;5;109m██\e[38;5;60m▄\e[38;5;109m███\e[38;5;60m▄\e[49m▀\e[39m \e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[48;5;252;38;5;252m██\e[48;5;102;38;5;102m█\e[49;39m\e[00m\r\n          \e[48;5;240;38;5;240m█\e[48;5;103;38;5;103m█\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m█\e[48;5;60m▄\e[38;5;60m█\e[38;5;240m▄\e[38;5;103m▄\e[48;5;109;38;5;60m▄\e[38;5;109m███\e[48;5;60;38;5;60m█\e[49;39m \e[38;5;102m▀▀▀▀▀▀▀\e[39m\e[00m\r\n         \e[38;5;240m▄\e[48;5;240;38;5;103m▄\e[48;5;103;38;5;60m▄\e[48;5;60;38;5;109m▄\e[48;5;109m██\e[48;5;60;38;5;60m█\e[49;39m \e[48;5;240;38;5;240m█\e[48;5;103;38;5;103m█\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m███\e[48;5;60;38;5;60m█\e[49;39m       \e[00m\r\n         \e[48;5;240;38;5;240m█\e[48;5;103m▄\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m███\e[48;5;60;38;5;60m█\e[49;39m \e[48;5;240;38;5;240m█\e[48;5;103m▄\e[48;5;60;38;5;60m█\e[48;5;109;38;5;109m███\e[48;5;60;38;5;60m█\e[49;39m       \e[00m\r\n           \e[38;5;60m▀▀▀▀\e[39m    \e[38;5;60m▀▀▀▀\e[39m        \e[00m\r\n\e[?2004h\e]0;werdl@BjornAgain: ~/dispatch\a\r\r\n\e(B\e[m\e[1m\e[38;5;2mwerdl\e(B\e[m@\e(B\e[m\e[1m\e[38;5;202mBjornAgain \e(B\e[m : \e(B\e[m\e[38;5;38mSun Mar 05\e(B\e[m [\e(B\e[m\e[38;5;201m14:56\e(B\e[m] \r\r\n[\e(B\e[m\e[38;5;51m~/dispatch\e(B\e[m] \e(B\e[m\e[1m\e[38;5;129m$\e(B\e[m \e(B\e[m"
+  - delay: 1849
+    content: "\e[?2004l\r\r\nlogout\r\n"

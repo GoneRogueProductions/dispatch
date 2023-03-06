@@ -95,7 +95,7 @@ style C color:#000
 ```
 - You can find out more at various places on our website
 #### List
-- <img src="https://avatars.githubusercontent.com/uimaxbai" width=25 style="border-radius:10px"/> [  @max](github.com/uimaxbai) - Frontend and some backend
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=25 style="border-radius:10px"/> [  @max](github.com/uimaxbai) - Frontend and backend
 - <img src="https://avatars.githubusercontent.com/werdl" width=25 style="border-radius:10px"/> [  @werdl](github.com/werdl) - Backend and forums
 - <img src="https://avatars.githubusercontent.com/thisiscoding1234" width=25 style="border-radius:10px"/> [  @teapot](github.com/thisiscoding1234) - Some random things
 - <img src="https://avatars.githubusercontent.com/2010person" width=25 style="border-radius:10px"/>[  @2010person](github.com/2010person) - Admin stuff

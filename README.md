@@ -26,15 +26,15 @@ We don't like copyrighting things, but we think that our property deserves to be
 Dispatch's software is licensed under the GNU General Public License v3.0.
 What is that?
 
-The GNU General Public License v3.0 (often shortened to GNU-GPLv3 or even GPL) is a copyleft license made for software and other kinds of things. It outlines that:
+The GNU Affero General Public License v3.0 (often shortened to GNU-AGPLv3 or even AGPL) is a copyleft license made for software and other kinds of things. It outlines that:
 
     You have to credit the author (me) if you want to distribute this piece of software.
 
     You can adapt upon this piece of software.
 
     You must release your adaptation of this piece of software under the same license as this one.
-
-#### Dispatch is licensed under the GNU-GPLv3 and later license.
+    Network use is distribution.
+#### Dispatch is licensed under the GNU-AGPLv3 and later license.
 ![termtosvg_sfzkpsa_](https://user-images.githubusercontent.com/116349156/222968449-c8c634c2-8298-42d6-8f1e-761612515f6d.svg)
 <!-- termtosvg is very cool! -->
 

@@ -1,5 +1,5 @@
 # Dispatch
-## [see it for yourself!! on dispatch.ml](https://dispatch.ml)
+## [dispatch.ml](https://dispatch.ml)
 ### Why
 - Talking is cool.
 - But talking securely is cooler.

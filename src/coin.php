@@ -5,8 +5,8 @@
     $found=0;
     
     $servername = "localhost";
-    $username = "root";
-    $password = "ogBgU5RUHJaV1D";
+    $username = "";
+    $password = "";
     $dbname = "dispatch";
     
     // Create connection

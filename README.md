@@ -1,5 +1,7 @@
 # Dispatch
 ## [dispatch.ml](https://dispatch.ml)
+### issues
+if you have an issue, please do it [here](https://github.com/GoneRogueProductions/dispatch-issues)
 ### Why
 - Talking is cool.
 - But talking securely is cooler.

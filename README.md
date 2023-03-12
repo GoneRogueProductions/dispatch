@@ -5,7 +5,7 @@ if you have an issue, please do it [here](https://github.com/GoneRogueProduction
 ### Why
 - Talking is cool.
 - But talking securely is cooler.
-- So Dispatch lets you and your friends talk, securely!
+- So, Dispatch lets you and your friends talk, securely!
 - We took our shared skills and made a nice-looking, yet also functioning chat service.
 - The code is available here for transparency (but not the passwords!)
 ### What
@@ -16,27 +16,27 @@ if you have an issue, please do it [here](https://github.com/GoneRogueProduction
 - User lookup
 - Admin features
 ### How
-![stack1](https://skillicons.dev/icons?i=js,html,css,bootstrap,jquery)
+![stack1:javascript, html, css, bootstrap, jqurery](https://skillicons.dev/icons?i=js,html,css,bootstrap,jquery)
 
-![stack2](https://skillicons.dev/icons?i=php,mysql)
+![stack2:php, mysql](https://skillicons.dev/icons?i=php,mysql)
 
-![stack3](https://skillicons.dev/icons?i=linux,bash)
+![stack3:linux, bash](https://skillicons.dev/icons?i=linux,bash)
 ### Mission Statement
-Our mission is to make quality software that serves people. We don't steal your data. We use free services, and you never pay for anything. We don't use ads, and don't sell your data. You may think that WhatsApp is secure, but in the current day and age it is not, unfortunately. The internet today is controlled by bige tech companies. Lets change that, one small step at a time.
+Our mission is to make quality software that serves people. We don't steal your data. We use free services, and you never pay for anything. We don't use ads, and don't sell your data. You may think that WhatsApp is secure, but in the current day and age it is not, unfortunately. The internet today is controlled by big tech companies. Lets change that, one small step at a time.
 Copyright Policy
-We don't like copyrighting things, but we think that our property deserves to be ours.
+We do not like copyrighting things, but we think that our property deserves to be ours.
 
 Dispatch's software is licensed under the GNU General Public License v3.0.
 What is that?
 
 The GNU Affero General Public License v3.0 (often shortened to GNU-AGPLv3 or even AGPL) is a copyleft license made for software and other kinds of things. It outlines that:
 
-    You have to credit the author (me) if you want to distribute this piece of software.
+You must credit the author (me) if you want to distribute this piece of software.
 
-    You can adapt upon this piece of software.
+You can adapt upon this piece of software.
 
-    You must release your adaptation of this piece of software under the same license as this one.
-    Network use is distribution.
+You must release your adaptation of this piece of software under the same license as this one.
+Network use is distribution.
 #### Dispatch is licensed under the GNU-AGPLv3 and later license.
 ![termtosvg_sfzkpsa_](https://user-images.githubusercontent.com/116349156/222968449-c8c634c2-8298-42d6-8f1e-761612515f6d.svg)
 <!-- termtosvg is very cool! -->
@@ -44,8 +44,8 @@ The GNU Affero General Public License v3.0 (often shortened to GNU-AGPLv3 or eve
 Dispatch's Logos are licensed under CC BY-NC-ND 4.0
 What is that?
 
-This particular Creative Commons license says that:
-- You have to credit the author (us) if you want to distribute these logos.
+This Creative Commons license says that:
+- You must credit the author (us) if you want to distribute these logos.
 - You may not adapt upon these logos and release them.
 - You cannot use these logos for commercial purposes.
 - You are free to share this logo.
@@ -53,28 +53,28 @@ This particular Creative Commons license says that:
 ### Contributors guide
 - The code is a mess.
 <pre>
-██╗   ██╗ ██████╗ ██╗   ██╗    ██╗  ██╗ █████╗ ██╗   ██╗███████╗    ██████╗ ███████╗███████╗███╗   ██╗    ██╗    ██╗ █████╗ ██████╗ ███╗   ██╗███████╗██████╗ ██╗
-╚██╗ ██╔╝██╔═══██╗██║   ██║    ██║  ██║██╔══██╗██║   ██║██╔════╝    ██╔══██╗██╔════╝██╔════╝████╗  ██║    ██║    ██║██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔══██╗██║
- ╚████╔╝ ██║   ██║██║   ██║    ███████║███████║██║   ██║█████╗      ██████╔╝█████╗  █████╗  ██╔██╗ ██║    ██║ █╗ ██║███████║██████╔╝██╔██╗ ██║█████╗  ██║  ██║██║
-  ╚██╔╝  ██║   ██║██║   ██║    ██╔══██║██╔══██║╚██╗ ██╔╝██╔══╝      ██╔══██╗██╔══╝  ██╔══╝  ██║╚██╗██║    ██║███╗██║██╔══██║██╔══██╗██║╚██╗██║██╔══╝  ██║  ██║╚═╝
-   ██║   ╚██████╔╝╚██████╔╝    ██║  ██║██║  ██║ ╚████╔╝ ███████╗    ██████╔╝███████╗███████╗██║ ╚████║    ╚███╔███╔╝██║  ██║██║  ██║██║ ╚████║███████╗██████╔╝██╗
-   ╚═╝    ╚═════╝  ╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝    ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═════╝ ╚═╝
-                                                                                                                                                                 
+██╗ ██╗ ██████╗ ██╗ ██╗ ██╗ ██╗ █████╗ ██╗ ██╗███████╗ ██████╗ ███████╗███████╗███╗ ██╗ ██╗ ██╗ █████╗ ██████╗ ███╗ ██╗███████╗██████╗ ██╗
+╚██╗ ██╔╝██╔═══██╗██║ ██║ ██║ ██║██╔══██╗██║ ██║██╔════╝ ██╔══██╗██╔════╝██╔════╝████╗ ██║ ██║ ██║██╔══██╗██╔══██╗████╗ ██║██╔════╝██╔══██╗██║
+╚████╔╝ ██║ ██║██║ ██║ ███████║███████║██║ ██║█████╗ ██████╔╝█████╗ █████╗ ██╔██╗ ██║ ██║ █╗ ██║███████║██████╔╝██╔██╗ ██║█████╗ ██║ ██║██║
+╚██╔╝ ██║ ██║██║ ██║ ██╔══██║██╔══██║╚██╗ ██╔╝██╔══╝ ██╔══██╗██╔══╝ ██╔══╝ ██║╚██╗██║ ██║███╗██║██╔══██║██╔══██╗██║╚██╗██║██╔══╝ ██║ ██║╚═╝
+██║ ╚██████╔╝╚██████╔╝ ██║ ██║██║ ██║ ╚████╔╝ ███████╗ ██████╔╝███████╗███████╗██║ ╚████║ ╚███╔███╔╝██║ ██║██║ ██║██║ ╚████║███████╗██████╔╝██╗
+╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝╚═╝ ╚═╝ ╚═══╝ ╚══════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝ ╚═══╝ ╚══╝╚══╝ ╚═╝ ╚═╝╚═╝ ╚═╝╚═╝ ╚═══╝╚══════╝╚═════╝ ╚═╝
+
 </pre>
 - You're still here, wow.
-- So the first step is to clone this repo
+- So, the first step is to clone this repo
 - Then make your changes
-- You then submit a PR
+- You then send us a PR
 - Go through the approval process
-- And then you are done
+- And then you have finished
 - If we like your code, we will add it to the server!
 ### Contributors and the history of Dispatch
-- This project is actually already 6 months old at launch - we've been working on it since September 2022
+- This project is already 6 months old at launch - we've been working on it since September 2022 
 - We estimate that the two main contributors @max and @werdl have collectively spent ~600 hours working on it
 ```mermaid
 graph LR
 Y[Our project]
-A[PHPChat] --> B[Sermo] -->  C[Dispatch]
+A[PHPChat] --> B[Sermo] --> C[Dispatch]
 D[phpchat.ml] --> E[sermo.ga] --> F[dispatch.ml]
 A --> D
 B --> E
@@ -97,8 +97,8 @@ style C color:#000
 ```
 - You can find out more at various places on our website
 #### List
-- <img src="https://avatars.githubusercontent.com/uimaxbai" width=25 style="border-radius:10px"/> [  @max](github.com/uimaxbai) - Frontend and backend
-- <img src="https://avatars.githubusercontent.com/werdl" width=25 style="border-radius:10px"/> [  @werdl](github.com/werdl) - Backend and forums
-- <img src="https://avatars.githubusercontent.com/thisiscoding1234" width=25 style="border-radius:10px"/> [  @teapot](github.com/thisiscoding1234) - Some random things
-- <img src="https://avatars.githubusercontent.com/2010person" width=25 style="border-radius:10px"/>[  @2010person](github.com/2010person) - Admin stuff
+- <img src="https://avatars.githubusercontent.com/uimaxbai" width=25 style="border-radius:10px"/> [ @max](github.com/uimaxbai) - Frontend and backend
+- <img src="https://avatars.githubusercontent.com/werdl" width=25 style="border-radius:10px"/> [ @werdl](github.com/werdl) - Backend and forums
+- <img src="https://avatars.githubusercontent.com/thisiscoding1234" width=25 style="border-radius:10px"/> [ @teapot](github.com/thisiscoding1234) - Some random things
+- <img src="https://avatars.githubusercontent.com/2010person" width=25 style="border-radius:10px"/>[ @2010person](github.com/2010person) - Admin stuff
 - [@froggo](no-github-yet) - logos (artist)

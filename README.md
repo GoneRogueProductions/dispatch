@@ -1,5 +1,6 @@
 # Dispatch
 ## [dispatch.ml](https://dispatch.ml)
+### We had a good run, but GoneRogue and Dispatch are now retired. Thanks for all the support. (dispatch.ml is down, btw)
 ### issues
 if you have an issue, please do it [here](https://github.com/GoneRogueProductions/dispatch-issues)
 ### Why
